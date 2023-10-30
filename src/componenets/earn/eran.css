@@ -1,0 +1,40 @@
+.earn-box-detail{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+.mainearn{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.earn-main{
+    width: 100%;
+    padding: 2em 5em;
+    background-color: black;
+    color: aliceblue;
+    /* border: 1px solid white; */
+}
+.earn-box{
+    border: 1px solid white;
+
+}
+.earn-box-1{
+    /* border-bottom: 1px solid white; */
+    border-top: 0.5px solid rgb(234, 231, 231);
+    padding: 1rem;
+
+}
+.menu{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+@media (max-width:1000px) {
+    .mainearn{
+        display: flex;
+        flex-direction: column;
+    }
+}

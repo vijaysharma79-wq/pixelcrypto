@@ -1,0 +1,71 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .burgermenu{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .toggle-btn {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-items {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column; /* Vertical layout */
+    display: none;
+  }
+  
+  .nav-items.open {
+    display: flex; /* Display when open class is present */
+  }
+  
+  .nav-items li {
+    margin: 10px 0;
+  }
+  
+  .nav-items a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .buttons {
+    display: flex;
+  }
+  
+  .buttons button {
+    background: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-items {
+      display: none;
+    }
+  
+    .nav-items.open {
+      display: flex;
+    }
+  }
+  

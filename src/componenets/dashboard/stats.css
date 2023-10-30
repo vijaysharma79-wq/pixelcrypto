@@ -1,0 +1,37 @@
+.stats-main{
+    background-color: black;
+    color: aliceblue;
+    /* display: flex; */
+    width: 100%;
+}
+.stats-heading{
+    padding: 2rem;
+}
+
+.stats-box{
+    padding: 2rem;
+
+    /* width: 100%; */
+
+    /* width: 100%; */
+    display: flex;
+    gap: 3rem;
+
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+}
+.stats-box1{
+    padding: 1rem;
+
+    width: 100%;
+    border: 1px solid white;
+
+}
+.stats-box-heading{
+    border-bottom: 1px solid white;
+}
+.stats-box-detail-all{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

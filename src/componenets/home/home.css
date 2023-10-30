@@ -1,0 +1,121 @@
+.home-main {
+    background-color: #1e1d1d;
+    color: white;
+    padding: 1em 5em;
+
+}
+
+.home-1 {
+    max-width: 60%;
+}
+
+button {
+    background-color: rgb(131, 195, 131);
+    color: aliceblue;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.Home-cart {
+    /* padding: 1em 5em; */
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.box {
+    /* width: 10%; */
+
+    max-width: 35rem;
+    box-sizing: border-box;
+    box-shadow: 0 0.7rem 0.8rem rgba(0, 0, 0, .2);
+
+    display: flex;
+    background-color: rgb(40, 39, 39);
+    /* background-color: #3c3c3c; */
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 9em;
+}
+
+.box-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart2 {
+    /* background-color: #3c3c3c; */
+    background-color: #1e1d1d;
+    display: flex;
+
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5em 5em;
+    box-sizing: border-box;
+    /* margin: 200px; */
+    color: whitesmoke;
+
+}
+
+.box1 {
+    box-sizing: border-box;
+    /* max-width: 25; */
+}
+
+.logo-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-1 {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+    .home-1 h1 {
+        /* display: none; */
+        font-size: 2rem;
+    }
+
+    .home-1 h4 {
+        font-size: 1rem;
+    }
+
+    .Home-main {
+        padding: 1em 2em
+            /* width: 40rem; */
+    }
+
+    .box {
+        max-width: 34rem;
+        gap: 0.5em;
+        /* width: 10rem; */
+        padding: 2em 7em;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .home-main {
+        padding: 0.5em 1em;
+    }
+
+    .box {
+        min-width: 20rem;
+    }
+}
