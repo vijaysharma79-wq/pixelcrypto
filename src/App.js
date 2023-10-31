@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import useState from 'react'
 // import './App.css';
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Navbar from './componenets/Navbar/Navbar';
 import Home from './componenets/home/Home';
 import Earn from './componenets/earn/Earn';
@@ -21,12 +21,15 @@ function App() {
       {/* <Rough></Rough> */}
       <Navbar></Navbar>
       <Routes>
-        <Route exact path='/' Component={Home}></Route>
+        {/* <Switch> */}
+
         <Route path='/mainearn' Component={Mainearn}></Route>
         <Route path='/dashboard' Component={Dashboard}></Route>
+        <Route exact path='/' Component={Home}></Route>
+        {/* </Switch> */}
       </Routes>
 
-      <Home />
+      {/* <Home /> */}
       {/* <Mainearn/> */}
       {/* <Mainearn/> */}
 

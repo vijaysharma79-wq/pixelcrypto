@@ -63,10 +63,13 @@ const Navbar = () => {
         </div>
         <div className="navbar-middle">
           <ul className="menu">
-            <li>Home</li>
-            <li>Dashboard</li>
+            <li><Link to="/" className="Link"> Home</Link></li>
+            <li><Link to="/dashboard" className="Link">Dashboard</Link></li>
+
+
             <li>NFT</li>
-            <li>earn</li>
+            <li><Link to="/mainearn" className="Link" >earn</Link></li>
+
             <li>Buy</li>
             <li>Refrence</li>
             <li>Ecosystem</li>
@@ -76,10 +79,10 @@ const Navbar = () => {
         {togle ? (
           <div className="navbar-middle2" onClick={handclose}>
             <ul className="menu2">
-              <li>Home</li>
-              <li>Dashboard</li>
-              <li>NFT</li>
-              <li>earn</li>
+              <li><Link to="/" className="Link">Home</Link></li>
+
+              <li><Link to="/dashboard" className="Link">Dashboard</Link></li>
+              <li><Link to="/mainearn" className="Link" >earn</Link></li>
               <li>Buy</li>
               <li>Refrence</li>
               <li>Ecosystem</li>
@@ -123,7 +126,7 @@ const Navbar = () => {
                 border: "1px solid #f0f2f4",
               },
               textTransform: "capitalize",
-              minWidth: "10px"
+              minWidth: "1em"
             }}>
               <MoreVertIcon sx={{ color: "white" }} />
             </Button>
@@ -134,7 +137,7 @@ const Navbar = () => {
                 border: "1px solid #f0f2f4",
               },
               textTransform: "capitalize",
-              minWidth: "36px",
+              minWidth: "2em",
               padding: "0px"
             }}>
               <img
